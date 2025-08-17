@@ -4,6 +4,11 @@ import ApodSection from "@/components/ApodSection";
 import IssTracker from "@/components/IssTracker";
 import MarsRoverPhotos from "@/components/MarsRoverPhotos";
 import NeoTracker from "@/components/NeoTracker";
+import SpaceNews from "@/components/SpaceNews";
+import UpcomingLaunches from "@/components/UpcomingLaunches";
+import ExoplanetExplorer from "@/components/ExoplanetExplorer";
+import SpaceWeather from "@/components/SpaceWeather";
+import AstronautTracker from "@/components/AstronautTracker";
 
 const Index = () => {
   return (
@@ -35,6 +40,29 @@ const Index = () => {
           
           <div id="neo" className="scroll-mt-24">
             <NeoTracker />
+          </div>
+        </section>
+        
+        {/* Space News & Updates */}
+        <section>
+          <h2 className="text-4xl font-bold text-center mb-12 cosmic-gradient bg-clip-text text-transparent">
+            Latest Space Updates
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <SpaceNews />
+            <UpcomingLaunches />
+          </div>
+        </section>
+        
+        {/* Exploration & Discovery */}
+        <section>
+          <h2 className="text-4xl font-bold text-center mb-12 cosmic-gradient bg-clip-text text-transparent">
+            Space Exploration
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <ExoplanetExplorer />
+            <SpaceWeather />
+            <AstronautTracker />
           </div>
         </section>
         
